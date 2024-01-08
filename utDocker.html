@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git y Docker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-container">
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light azul p-2">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">INFÓRMATE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="docker.html" id="navbarDropdownMenuLinkDocker"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Docker
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="defDocker.html">¿Qué es Docker?</a></li>
+                                    <li><a class="dropdown-item" href="utDocker.html">Utilidad</a></li>
+                                    <li><a class="dropdown-item" href="ventDocker.html">Ventajas</a></li>
+                                    <li><a class="dropdown-item" href="comDocker.html">Comandos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="git.html" id="navbarDropdownMenuLinkGit"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Git
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="defGit.html">¿Qué es Git?</a></li>
+                                    <li><a class="dropdown-item" href="utGit.html">Utilidad</a></li>
+                                    <li><a class="dropdown-item" href="ventGit.html">Ventajas</a></li>
+                                    <li><a class="dropdown-item" href="comGit.html">Comandos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="p-5">
+            <article id="docker">
+                <div class="container">
+                    <h1>Utilidad</h1>
+                    <p>Docker es una herramienta diseñada para beneficiar tanto a desarrolladores, testers, como
+                        administradores de sistemas, en relación a las máquinas, a los entornos en sí donde se ejecutan
+                        las aplicaciones software, los procesos de despliegue, etc.
+                        En el caso de los desarrolladores, el uso de Docker hace que puedan centrarse en desarrollar su
+                        código sin preocuparse de si dicho código funcionará en la máquina en la que se ejecutará.
+                    </p>
+                    <p>
+                        Por ejemplo, sin utilizar Docker un posible escenario podría ser el siguiente (hay otras formas
+                        de solucionar este escenario, pero por poner un ejemplo claro):
+                    <ul>
+                        <li>Pepe tiene en su ordenador instalado Java 8, y está programando una funcionalidad específica
+                            de la aplicación con algo que solo está disponible en esa versión de Java.</li>
+                        <li>José tiene instalado en su máquina Java 7, porque está en otro proyecto trabajando sobre
+                            otro
+                            código, pero Pepe quiere que José ejecute el código de su aplicación en su máquina. O José
+                            se
+                            instala Java 8, o la aplicación en su máquina fallará.</li>
+                    </ul>
+                    Este escenario desaparece con Docker. Para ejecutar la aplicación, Pepe se crea un contenedor de
+                    Docker con la aplicación, la versión 8 de Java y el resto de recursos necesarios, y se lo pasa a
+                    José.
+                    José, teniendo Docker instalado en su ordenador, puede ejecutar la aplicación a través del
+                    contenedor, sin tener que instalar nada más.
+                    </p>
+                    <p>
+                        Por eso Docker también es muy bueno para el testing, para tener entornos de pruebas. Por un
+                        lado, es muy sencillo crear y borrar un contenedor, además de que son muy ligeros, por lo que
+                        podemos ejecutar varios contenedores en una misma máquina (donde dicho contenedor tendría el
+                        entorno de nuestra aplicación: base de datos, servidor, librerías…). Por otro, un mismo
+                        contenedor funcionará en cualquier máquina Linux: un portátil, el ordenador de tu casa, máquinas
+                        alojadas en Amazon, tu propio servidor…
+                        Esto además beneficia a la parte de sistemas, ya como los contenedores son más ligeros que las
+                        máquinas virtuales, se reduce el número de máquinas necesarias para tener un entorno.
+                        Y lo que es mejor, Docker es open source.
+                        Pero Docker también tiene otras ventajas. En el post de la semana que viene hablaré un poco más
+                        de cuáles son los principales elementos de Docker, y veremos otros beneficios que aporta la
+                        herramienta.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <footer class="text-center text-lg-start azul text-muted p-2">
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-4">GIT</h6>
+                            <p><a href="defGit.html" class="text-reset">¿Qué es Git?</a></p>
+                            <p><a href="utGit.html" class="text-reset">Utilidad</a></p>
+                            <p><a href="ventGit.html" class="text-reset">Ventajas</a></p>
+                            <p><a href="comGit.html" class="text-reset">Comandos </a></p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-4">DOCKER</h6>
+                            <p><a href="defDocker.html" class="text-reset">¿Qué es Docker?</a></p>
+                            <p><a href="utDocker.html" class="text-reset">Utilidad</a></p>
+                            <p><a href="ventDocker.html" class="text-reset">Ventajas</a></p>
+                            <p><a href="comDocker.html" class="text-reset">Comandos </a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center p-4 colorFooter">
+                © 2021 Copyright: Marta Borreguero Soria
+            </div>
+        </footer>
+    </footer>
+</body>
+
+</html>

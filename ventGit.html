@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git y Docker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-container">
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light azul p-2">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">INFÓRMATE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="docker.html" id="navbarDropdownMenuLinkDocker"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Docker
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="defDocker.html">¿Qué es Docker?</a></li>
+                                    <li><a class="dropdown-item" href="utDocker.html">Utilidad</a></li>
+                                    <li><a class="dropdown-item" href="ventDocker.html">Ventajas</a></li>
+                                    <li><a class="dropdown-item" href="comDocker.html">Comandos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="git.html" id="navbarDropdownMenuLinkGit"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Git
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="defGit.html">¿Qué es Git?</a></li>
+                                    <li><a class="dropdown-item" href="utGit.html">Utilidad</a></li>
+                                    <li><a class="dropdown-item" href="ventGit.html">Ventajas</a></li>
+                                    <li><a class="dropdown-item" href="comGit.html">Comandos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="p-5">
+            <article id="git">
+                <div class="container">
+                    <h1>Ventajas</h1>
+                    <p>Las ventajas de Git son numerosas.</p>
+                    <ul>
+                        <li>
+                            Desarrollo simultáneo
+                            Todos los usuarios tienen su propia copia local de código y pueden trabajar simultáneamente
+                            en sus
+                            propias ramas. Git funciona sin conexión, ya que casi todas las operaciones son locales.
+                        </li>
+
+                        <li>
+                            Versiones de lanzamiento más rápidas
+                            Las ramas permiten un desarrollo flexible y simultáneo. La rama principal contiene código
+                            estable y
+                            de alta calidad desde el que publica. Las ramas de características contienen trabajo en
+                            curso y se
+                            combinan con la rama principal tras la finalización. Al separar la rama de versión del
+                            desarrollo en
+                            curso, es más fácil administrar código estable y enviar actualizaciones más rápidamente.
+                        </li>
+
+                        <li>
+                            Integración incorporada
+                            Debido a su popularidad, Git se integra en la mayoría de las herramientas y productos. Todos
+                            los IDE
+                            principales tienen compatibilidad integrada con Git y muchas herramientas admiten la
+                            integración y
+                            la implementación continuas, las pruebas automatizadas, el seguimiento de los elementos de
+                            trabajo,
+                            las métricas y la integración de características de informes con Git. Esta integración
+                            simplifica el
+                            flujo de trabajo diario.</li>
+
+                        <li>
+                            Sólido soporte técnico de la comunidad
+                            Git es de código abierto y se ha convertido en el estándar de facto para el control de
+                            versiones. No
+                            hay escasez de herramientas y recursos disponibles para que los equipos aprovechen. El
+                            volumen de
+                            soporte técnico de la comunidad para Git en comparación con otros sistemas de control de
+                            versiones
+                            facilita recibir ayuda cuando se necesita.</li>
+
+                        <li>
+                            Git funciona con cualquier equipo
+                            Utilizar Git con una herramienta de administración de código fuente aumenta la productividad
+                            de un
+                            equipo al fomentar la colaboración, aplicar directivas, automatizar procesos y mejorar la
+                            visibilidad y la rastreabilidad del trabajo. El equipo puede decidirse por herramientas
+                            individuales
+                            para el control de versiones, el seguimiento de los elementos de trabajo y la integración e
+                            implementación continuas. O bien, pueden elegir una solución como GitHub o Azure DevOps que
+                            admita
+                            todas estas tareas en un solo lugar.</li>
+
+                        <li>
+                            Solicitudes de incorporación de cambios
+                            Use solicitudes de incorporación de cambios para analizar los cambios de código con el
+                            equipo antes
+                            de combinarlos con la rama principal. Las discusiones en las solicitudes de incorporación de
+                            cambios
+                            son valiosas para garantizar la calidad del código y aumentar los conocimientos en todo el
+                            equipo.
+                            Las plataformas como GitHub y Azure DevOps ofrecen una experiencia de solicitud de
+                            incorporación de
+                            cambios enriquecida en la que los desarrolladores pueden examinar los cambios de archivos,
+                            dejar
+                            comentarios, inspeccionar confirmaciones, ver compilaciones y votar para aprobar el código.
+                        </li>
+
+                        <li>
+                            Directivas de rama
+                            Los equipos pueden configurar GitHub y Azure DevOps para aplicar flujos de trabajo y
+                            procesos
+                            coherentes en todo el equipo. Pueden configurar directivas de rama para asegurarse de que
+                            las
+                            solicitudes de incorporación de cambios cumplan los requisitos antes de la finalización. Las
+                            directivas de rama protegen las ramas importantes al prevenir las inserciones directas,
+                            requerir
+                            revisores y garantizar compilaciones limpias.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <footer class="text-center text-lg-start azul text-muted p-2">
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-4">GIT</h6>
+                            <p><a href="defGit.html" class="text-reset">¿Qué es Git?</a></p>
+                            <p><a href="utGit.html" class="text-reset">Utilidad</a></p>
+                            <p><a href="ventGit.html" class="text-reset">Ventajas</a></p>
+                            <p><a href="comGit.html" class="text-reset">Comandos </a></p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-4">DOCKER</h6>
+                            <p><a href="defDocker.html" class="text-reset">¿Qué es Docker?</a></p>
+                            <p><a href="utDocker.html" class="text-reset">Utilidad</a></p>
+                            <p><a href="ventDocker.html" class="text-reset">Ventajas</a></p>
+                            <p><a href="comDocker.html" class="text-reset">Comandos </a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center p-4 colorFooter">
+                © 2021 Copyright: Marta Borreguero Soria
+            </div>
+        </footer>
+    </footer>
+</body>

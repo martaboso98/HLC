@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git y Docker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-container">
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light azul p-2">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">INFÓRMATE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="docker.html" id="navbarDropdownMenuLinkDocker"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Docker
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="defDocker.html">¿Qué es Docker?</a></li>
+                                    <li><a class="dropdown-item" href="utDocker.html">Utilidad</a></li>
+                                    <li><a class="dropdown-item" href="ventDocker.html">Ventajas</a></li>
+                                    <li><a class="dropdown-item" href="comDocker.html">Comandos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="git.html" id="navbarDropdownMenuLinkGit"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Git
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="defGit.html">¿Qué es Git?</a></li>
+                                    <li><a class="dropdown-item" href="utGit.html">Utilidad</a></li>
+                                    <li><a class="dropdown-item" href="ventGit.html">Ventajas</a></li>
+                                    <li><a class="dropdown-item" href="comGit.html">Comandos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="p-5">
+            <article id="git">
+                <div class="container">
+                    <h1>Comandos Git</h1>
+                    <p>Git clone es un comando para descargarte el código fuente existente desde un repositorio remoto
+                        (como Github, por ejemplo). En otras palabras, Git clone básicamente realiza una copia idéntica
+                        de la última versión de un proyecto en un repositorio y la guarda en tu ordenador: git clone
+                        https: //link-con-nombre-del-repositorio
+                    </p>
+                    <p>Las ramas (branch) son altamente importantes en el mundo de Git. Usando ramas, varios
+                        desarrolladores pueden trabajar en paralelo en el mismo proyecto simultáneamente. Podemos usar
+                        el comando git branch para crearlas, listarlas y eliminarlas.
+                        <br>
+                        Creando una nueva rama:
+                        git branch nombre-de-la-rama
+                        <br>
+                        Este comando creará una rama en local. Para enviar (push) la nueva rama al repositorio
+                        remoto, necesitarás usar el siguiente comando:
+                        git push nombre-remoto nombre-rama
+                    </p>
+                    <p>Visualización de ramas:
+                        git branch
+                        git branch --list</p>
+                    <p>Borrar una rama:
+                        git branch -d nombre-de-la-rama</p>
+                    <p>Este es también uno de los comandos más utilizados en Git. Para trabajar en una rama, primero
+                        tienes que cambiarte a ella. Usaremos git checkout principalmente para cambiarte de una rama a
+                        otra. También lo podemos usar para chequear archivos y commits.
+                        git checkout nombre-de-la-rama</p>
+                    <p>El comando de git status nos da toda la información necesaria sobre la rama actual.
+                        git status</p>
+                    <p>Añadir un único archivo:
+                        git add archivo
+                        Añadir todo de una vez:
+                        git add -A</p>
+                    <p>Git commit es como establecer un punto de control en el proceso de desarrollo al cual puedes
+                        volver más tarde si es necesario.
+                        También necesitamos escribir un mensaje corto para explicar qué hemos desarrollado o modificado
+                        en el código fuente.
+                        git commit -m "mensaje de confirmación"</p>
+
+                    <p>Git push envía tus commits al repositorio remoto.
+                        git push nombre-remoto nombre-de-tu-rama</p>
+                    <p>El comando git pull se utiliza para recibir actualizaciones del repositorio remoto. Este comando
+                        es una combinación del git fetch y del git merge lo cual significa que cundo usemos el git pull
+                        recogeremos actualizaciones del repositorio remoto (git fetch) e inmediatamente aplicamos estos
+                        últimos cambios en local (git merge).
+                        git pull nombre-remoto</p>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <footer class="text-center text-lg-start azul text-muted p-2">
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-4">GIT</h6>
+                            <p><a href="defGit.html" class="text-reset">¿Qué es Git?</a></p>
+                            <p><a href="utGit.html" class="text-reset">Utilidad</a></p>
+                            <p><a href="ventGit.html" class="text-reset">Ventajas</a></p>
+                            <p><a href="comGit.html" class="text-reset">Comandos </a></p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-4">DOCKER</h6>
+                            <p><a href="defDocker.html" class="text-reset">¿Qué es Docker?</a></p>
+                            <p><a href="utDocker.html" class="text-reset">Utilidad</a></p>
+                            <p><a href="ventDocker.html" class="text-reset">Ventajas</a></p>
+                            <p><a href="comDocker.html" class="text-reset">Comandos </a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center p-4 colorFooter">
+                © 2021 Copyright: Marta Borreguero Soria
+            </div>
+        </footer>
+    </footer>
+</body>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git y Docker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="imagen.js" defer></script>
+</head>
+
+<body>
+    <div id="main-container">
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light azul p-2">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">INFÓRMATE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="docker.html" id="navbarDropdownMenuLinkDocker"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Docker
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="defDocker.html">¿Qué es Docker?</a></li>
+                                    <li><a class="dropdown-item" href="utDocker.html">Utilidad</a></li>
+                                    <li><a class="dropdown-item" href="ventDocker.html">Ventajas</a></li>
+                                    <li><a class="dropdown-item" href="comDocker.html">Comandos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="git.html" id="navbarDropdownMenuLinkGit"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Git
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="defGit.html">¿Qué es Git?</a></li>
+                                    <li><a class="dropdown-item" href="utGit.html">Utilidad</a></li>
+                                    <li><a class="dropdown-item" href="ventGit.html">Ventajas</a></li>
+                                    <li><a class="dropdown-item" href="comGit.html">Comandos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="p-5">
+            <article id="docker">
+                <div class="container">
+                    <h1>¿Qué es Docker?</h1>
+                    <p><strong>Docker</strong> es una plataforma de software que le permite crear, probar e implementar
+                        aplicaciones rápidamente.
+                        Docker empaqueta software en unidades estandarizadas llamadas contenedores que incluyen todo lo
+                        necesario para que el software se ejecute, incluidas bibliotecas, herramientas de sistema,
+                        código y
+                        tiempo de ejecución. Con Docker, puede implementar y ajustar la escala de aplicaciones
+                        rápidamente
+                        en cualquier entorno con la certeza de saber que su código se ejecutará.</p>
+                    <input value="Ocultar imagen" type="button" class="btn azul">
+                    <div class="imagen">
+                        <img src="docker.png" alt="docker" class="tamaño">
+                    </div>
+                </div>
+            </article>
+            <article id="git">
+                <div class="container">
+                    <h1>¿Qué es Git?</h1>
+                    <p><strong>Git</strong> es un sistema de control de versiones distribuido, lo que significa que un
+                        clon
+                        local del proyecto es un repositorio de control de versiones completo.
+                        Estos repositorios locales plenamente funcionales permiten trabajar sin conexión o de forma
+                        remota
+                        con facilidad. Los desarrolladores confirman su trabajo localmentey, a continuación, sincronizan
+                        la
+                        copia del repositorio con la del servidor. Este paradigma es distinto del
+                        control de versiones centralizado, donde los clientes deben sincronizar el código con un
+                        servidor
+                        antes de crear nuevas versiones.</p>
+                    <input value="Ocultar imagen" type="button" class="btn azul">
+                    <div class="imagen">
+                        <img src="git.png" alt="git" class="tamaño">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <footer class="text-center text-lg-start azul text-muted p-2">
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-4">GIT</h6>
+                            <p><a href="defGit.html" class="text-reset">¿Qué es Git?</a></p>
+                            <p><a href="utGit.html" class="text-reset">Utilidad</a></p>
+                            <p><a href="ventGit.html" class="text-reset">Ventajas</a></p>
+                            <p><a href="comGit.html" class="text-reset">Comandos </a></p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-4">DOCKER</h6>
+                            <p><a href="defDocker.html" class="text-reset">¿Qué es Docker?</a></p>
+                            <p><a href="utDocker.html" class="text-reset">Utilidad</a></p>
+                            <p><a href="ventDocker.html" class="text-reset">Ventajas</a></p>
+                            <p><a href="comDocker.html" class="text-reset">Comandos </a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center p-4 colorFooter">
+                © 2021 Copyright: Marta Borreguero Soria
+            </div>
+        </footer>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git y Docker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-container">
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light azul p-2">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">INFÓRMATE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="docker.html" id="navbarDropdownMenuLinkDocker"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Docker
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="defDocker.html">¿Qué es Docker?</a></li>
+                                    <li><a class="dropdown-item" href="utDocker.html">Utilidad</a></li>
+                                    <li><a class="dropdown-item" href="ventDocker.html">Ventajas</a></li>
+                                    <li><a class="dropdown-item" href="comDocker.html">Comandos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="git.html" id="navbarDropdownMenuLinkGit"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Git
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="defGit.html">¿Qué es Git?</a></li>
+                                    <li><a class="dropdown-item" href="utGit.html">Utilidad</a></li>
+                                    <li><a class="dropdown-item" href="ventGit.html">Ventajas</a></li>
+                                    <li><a class="dropdown-item" href="comGit.html">Comandos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="p-5">
+            <article id="git">
+                <div class="container">
+                    <h1>Utilidad</h1>
+                    <p>Git es un sistema de control de versiones (VCS, por sus siglas en inglés) que se utiliza para
+                        rastrear los cambios en el código fuente de un proyecto a lo largo del tiempo. Aquí hay varias
+                        razones para utilizar Git:</p>
+                    <ul>
+                        <li>
+                            Historial de cambios: Git mantiene un historial completo de todos los cambios realizados en
+                            un
+                            proyecto. Cada cambio, desde la creación de archivos hasta las modificaciones y
+                            eliminaciones,
+                            se registra, lo que permite ver cómo ha evolucionado el código con el tiempo.</li>
+
+                        <li>
+                            Colaboración: Git facilita la colaboración en proyectos entre varias personas. Varios
+                            desarrolladores pueden trabajar en el mismo proyecto de manera concurrente, y Git se encarga
+                            de
+                            fusionar sus cambios de manera eficiente.</li>
+
+                        <li>
+                            Ramas (Branches): Git permite crear ramas para trabajar en características o correcciones de
+                            errores de manera independiente sin afectar la rama principal del código. Esto facilita el
+                            desarrollo paralelo y la gestión de características nuevas antes de integrarlas en la rama
+                            principal.</li>
+
+                        <li>
+                            Revertir cambios: Si algo sale mal o si es necesario deshacer cambios anteriores, Git
+                            proporciona herramientas para revertir o eliminar commits específicos, lo que facilita la
+                            corrección de errores y la gestión de versiones.</li>
+
+                        <li>
+                            Etiquetado (Tagging): Puedes etiquetar versiones específicas de tu código para marcar hitos
+                            importantes, como lanzamientos de software. Esto facilita la referencia a versiones
+                            específicas
+                            y la gestión de lanzamientos.</li>
+
+                        <li>
+                            Gestión de conflictos: Cuando dos o más personas realizan cambios en la misma parte del
+                            código,
+                            Git facilita la identificación y resolución de conflictos. Puedes revisar los cambios y
+                            decidir
+                            cómo fusionarlos.</li>
+
+                        <li>
+                            Copias de seguridad: Git actúa como una forma de hacer copias de seguridad del código
+                            fuente.
+                            Cada clon del repositorio Git contiene todo el historial, lo que facilita la recuperación de
+                            versiones anteriores si es necesario.</li>
+
+                        <li>
+                            Integración con servicios en la nube: Muchas plataformas de desarrollo, como GitHub, GitLab
+                            y
+                            Bitbucket, utilizan Git como base para el control de versiones. Estos servicios ofrecen
+                            funciones adicionales, como seguimiento de problemas, integración continua y más.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <footer class="text-center text-lg-start azul text-muted p-2">
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-4">GIT</h6>
+                            <p><a href="defGit.html" class="text-reset">¿Qué es Git?</a></p>
+                            <p><a href="utGit.html" class="text-reset">Utilidad</a></p>
+                            <p><a href="ventGit.html" class="text-reset">Ventajas</a></p>
+                            <p><a href="comGit.html" class="text-reset">Comandos </a></p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-4">DOCKER</h6>
+                            <p><a href="defDocker.html" class="text-reset">¿Qué es Docker?</a></p>
+                            <p><a href="utDocker.html" class="text-reset">Utilidad</a></p>
+                            <p><a href="ventDocker.html" class="text-reset">Ventajas</a></p>
+                            <p><a href="comDocker.html" class="text-reset">Comandos </a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center p-4 colorFooter">
+                © 2021 Copyright: Marta Borreguero Soria
+            </div>
+        </footer>
+    </footer>
+</body>

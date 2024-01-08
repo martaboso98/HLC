@@ -1,0 +1,41 @@
+.azul {
+    background-color: #e3f2fd;
+}
+
+h1 {
+    padding: 2%;
+}
+
+p {
+    text-align: justify;
+}
+
+#main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.colorFooter {
+    background-color: #bcd6e8;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tamaño {
+    height: auto;
+    width: 15vw;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
