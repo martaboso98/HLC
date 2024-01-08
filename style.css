@@ -29,7 +29,7 @@ a {
     text-decoration: none;
 }
 
-.tamaño {
+.tamanyo {
     height: auto;
     width: 15vw;
 }
@@ -38,4 +38,22 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile p {
+        text-align: center;
+    }
+
+    .imagen {
+        padding: 8%;
+    }
+
+    .tamanyo {
+        width: 20vw;
+    }
+
+    h1 {
+        margin-top: 4%;
+    }
 }
